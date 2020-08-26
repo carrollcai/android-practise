@@ -58,7 +58,6 @@ public class CounterActivity extends AppCompatActivity {
                 Log.d("", mButton.getText().toString().equals("开始计时") + "");
                 if (mButton.getText().toString().equals("开始计时")) {
                     // 启动广播，时间改变后通知UI层修改
-
                     try {
                         String nowDateStr = df.format(new Date());
                         startDate = df.parse(nowDateStr);
@@ -82,7 +81,7 @@ public class CounterActivity extends AppCompatActivity {
 
     private void startTimeService() {
         serviceIntent = new Intent(this, TimeService.class);
-        this.startService(serviceIntent);
+        startService(serviceIntent);
     }
 
     private  void  registerBroadcastReceiver() {

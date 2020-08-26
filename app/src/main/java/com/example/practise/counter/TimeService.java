@@ -48,7 +48,7 @@ public class TimeService extends Service {
                     timer = null;
                 }
             }
-        }, 1000, 1000);
+        }, 200, 1000);
     }
 
     @Nullable
