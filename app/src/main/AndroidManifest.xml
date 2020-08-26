@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".rememberpwd.WelcomeActivity"></activity>
+        <activity android:name=".rememberpwd.LoginActivity" />
         <activity
             android:name=".MainActivity"
             android:label="测试">
@@ -18,15 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".counter.CounterActivity" />
         <activity android:name=".recyclerview.LinearActivity" />
-        <activity android:name=".recyclerview.RecyclerViewActivity" />
-<!--        <activity android:name=".view.RecyclerViewActivity" />-->
+        <activity android:name=".recyclerview.RecyclerViewActivity" /> <!-- <activity android:name=".view.RecyclerViewActivity" /> -->
         <activity android:name=".NewActivity" />
+
         <service android:name=".counter.TimeService">
             <intent-filter>
-                <action android:name="TIME_CHANGE_ACTION"></action>
+                <action android:name="TIME_CHANGE_ACTION" />
             </intent-filter>
         </service>
     </application>

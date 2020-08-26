@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.example.practise.counter.CounterActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
+import com.example.practise.rememberpwd.LoginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAct, btnRv, btnCounter;
+    private Button btnAct, btnRv, btnCounter, btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         btnRv = findViewById(R.id.btn_rv);
 
         btnCounter = findViewById(R.id.btn_counter);
+
+        btnLogin = findViewById(R.id.btn_login);
 
         btnAct.setOnClickListener(new View.OnClickListener() {
 
@@ -53,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CounterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

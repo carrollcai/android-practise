@@ -21,7 +21,6 @@ import static com.example.practise.counter.CounterActivity.TIME_CHANGE_ACTION;
  * Created by Peter on 2020/8/26.
  */
 
-
 public class TimeService extends Service {
 
     private Timer timer;

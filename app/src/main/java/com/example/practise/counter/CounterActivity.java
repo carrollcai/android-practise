@@ -45,7 +45,6 @@ public class CounterActivity extends AppCompatActivity {
         mButton = findViewById(R.id.counter_btn);
         mEditText = findViewById(R.id.counter_et);
 
-
         initWidget();
 
         registerBroadcastReceiver();
@@ -106,6 +105,7 @@ public class CounterActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+                // 将时间戳的差值转换成中文展示
                 long diff = currentDate.getTime() - startDate.getTime();
 
                 long days = diff / (1000 * 60 * 60 * 24);
