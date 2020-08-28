@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.example.practise.counter.CounterActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
 import com.example.practise.rememberpwd.LoginActivity;
+import com.example.practise.sqlitedemo.SqliteDemoActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAct, btnRv, btnCounter, btnLogin;
+    private Button btnAct, btnRv, btnCounter, btnLogin, btnSqlite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         btnCounter = findViewById(R.id.btn_counter);
 
         btnLogin = findViewById(R.id.btn_login);
+
+        btnSqlite = findViewById(R.id.btn_sqlite);
 
         btnAct.setOnClickListener(new View.OnClickListener() {
 
@@ -64,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSqlite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SqliteDemoActivity.class);
                 startActivity(intent);
             }
         });
