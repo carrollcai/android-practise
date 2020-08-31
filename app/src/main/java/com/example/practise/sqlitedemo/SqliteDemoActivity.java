@@ -19,6 +19,7 @@ import androidx.fragment.app.FragmentTabHost;
 public class SqliteDemoActivity extends FragmentActivity {
     private FragmentTabHost tabHost;
     private LayoutInflater layoutInflater;
+    // 利用了Java的反射机制
     private Class<?> fragmentArr[] = {CameraHistoryFragment.class, CameraHistoryFragment.class, CameraHistoryFragment.class};
     private int tabImageArr[] = {R.drawable.camera_tab_btn, R.drawable.audio_tab_btn, R.drawable.setting_tab_btn};
     private String tabTextArr[] = {"Camera", "Audio", "Setting"};
@@ -52,7 +53,7 @@ public class SqliteDemoActivity extends FragmentActivity {
                     "android.permission.WRITE_EXTERNAL_STORAGE");
             if (permission != PackageManager.PERMISSION_GRANTED) {
                 // 没有写的权限，去申请写的权限，会弹出对话框
-                ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE,REQUEST_EXTERNAL_STORAGE);
+                ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
             }
         } catch (Exception e) {
             e.printStackTrace();

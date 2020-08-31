@@ -42,6 +42,13 @@
         android:text="打开sqlite"
         />
 
+    <Button
+        android:id="@+id/btn_contentprovider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开ContentProvider"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

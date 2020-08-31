@@ -25,7 +25,7 @@ public class ShowCameraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE); //ȥ��������
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_show_camera);
         backImage = (ImageView) findViewById(R.id.image_back_camera);
         titleEdit = (EditText) findViewById(R.id.edt_title_show_camera);

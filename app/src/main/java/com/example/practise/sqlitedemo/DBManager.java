@@ -68,6 +68,11 @@ public class DBManager {
         }
     }
 
+    // TODO
+    public void insert() {
+
+    }
+
     public List<History> query(String[] type) {
         ArrayList<History> histories = new ArrayList<History>();
         Cursor cursor = queryTheCursor(type);
