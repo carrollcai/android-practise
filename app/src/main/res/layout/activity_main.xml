@@ -49,6 +49,34 @@
         android:text="打开ContentProvider"
         />
 
+    <Button
+        android:id="@+id/btn_httpurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开HttpURLConnection"
+        />
+
+    <Button
+        android:id="@+id/btn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开Webview"
+        />
+
+    <Button
+        android:id="@+id/btn_webview_html"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开Webview本地HTML"
+        />
+
+    <Button
+        android:id="@+id/btn_webview_js"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开Webview JS"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
