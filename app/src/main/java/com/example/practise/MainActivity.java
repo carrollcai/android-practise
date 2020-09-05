@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
 import com.example.practise.counter.CounterActivity;
+import com.example.practise.customview.CustomViewActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
 import com.example.practise.rememberpwd.LoginActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
@@ -25,7 +26,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAct, btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS;
+    private Button btnAct, btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomViw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         btnWebviewHtml = findViewById(R.id.btn_webview_html);
 
         btnWebviewJS = findViewById(R.id.btn_webview_js);
+
+        btnCustomViw = findViewById(R.id.btn_custom_view);
 
         btnAct.setOnClickListener(new View.OnClickListener() {
 
@@ -132,6 +135,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, WebViewJSActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCustomViw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CustomViewActivity.class);
                 startActivity(intent);
             }
         });

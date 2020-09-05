@@ -23,7 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".webview.WebViewJSActivity"></activity>
+        <activity android:name=".customview.CustomViewActivity"></activity>
+        <activity android:name=".webview.WebViewJSActivity" />
         <activity android:name=".webview.WebviewLoadLocalHtmlActivity" />
         <activity android:name=".webview.WebviewDemoActivity" />
         <activity android:name=".HttpURLConnectionDemo.HttpURLConnectionActivity" />
