@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.practise">
     <!-- 外部存储文件的读取权限 -->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,7 +25,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".customview.CustomViewActivity"></activity>
+        <activity android:name=".servicebest.DownloadDemoActivity"></activity>
+        <activity android:name=".customview.CustomViewActivity" />
         <activity android:name=".webview.WebViewJSActivity" />
         <activity android:name=".webview.WebviewLoadLocalHtmlActivity" />
         <activity android:name=".webview.WebviewDemoActivity" />
@@ -45,7 +48,6 @@
         <activity android:name=".counter.CounterActivity" />
         <activity android:name=".recyclerview.LinearActivity" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
-        <activity android:name=".NewActivity" />
 
         <service android:name=".counter.TimeService">
             <intent-filter>
@@ -58,6 +60,11 @@
             android:exported="true"
             android:readPermission="com.example.practise.READ_DATABASE"
             android:writePermission="com.example.practise.WRITE_DATABASE" />
+        
+        <service android:name=".servicebest.DownloadService"
+            android:enabled="true"
+            android:exported="true"
+            ></service>
     </application>
 
 </manifest>

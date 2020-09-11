@@ -11,6 +11,7 @@ import com.example.practise.counter.CounterActivity;
 import com.example.practise.customview.CustomViewActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
 import com.example.practise.rememberpwd.LoginActivity;
+import com.example.practise.servicebest.DownloadDemoActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
 import com.example.practise.webview.WebViewJSActivity;
 import com.example.practise.webview.WebviewDemoActivity;
@@ -26,14 +27,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAct, btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomViw;
+    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btnAct = findViewById(R.id.btn_act);
 
         btnRv = findViewById(R.id.btn_rv);
 
@@ -55,17 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnWebviewJS = findViewById(R.id.btn_webview_js);
 
-        btnCustomViw = findViewById(R.id.btn_custom_view);
+        btnCustomView = findViewById(R.id.btn_custom_view);
 
-        btnAct.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,  NewActivity.class);
-                startActivity(intent);
-//                Log.d("1", "测试");
-            }
-        });
+        btnDownloadService = findViewById(R.id.btn_download_service);
 
         btnRv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,10 +130,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnCustomViw.setOnClickListener(new View.OnClickListener() {
+        btnCustomView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CustomViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDownloadService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DownloadDemoActivity.class);
                 startActivity(intent);
             }
         });
