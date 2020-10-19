@@ -7,10 +7,8 @@ import android.widget.Button;
 
 import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
-import com.example.practise.counter.CounterActivity;
 import com.example.practise.customview.CustomViewActivity;
-import com.example.practise.recyclerview.RecyclerViewActivity;
-import com.example.practise.rememberpwd.LoginActivity;
+import com.example.practise.mvp.ipinfo.MVPActivity;
 import com.example.practise.servicebest.DownloadDemoActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
 import com.example.practise.webview.WebViewJSActivity;
@@ -18,6 +16,9 @@ import com.example.practise.webview.WebviewDemoActivity;
 import com.example.practise.webview.WebviewLoadLocalHtmlActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import cn.finalteam.okhttpfinal.OkHttpFinal;
+import cn.finalteam.okhttpfinal.OkHttpFinalConfiguration;
 
 /**
  * Copyright (C) 2020. All rights reserved.
@@ -27,18 +28,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService;
+    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService, btnMVP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnRv = findViewById(R.id.btn_rv);
+        // 访问网络
+        OkHttpFinalConfiguration.Builder builder = new OkHttpFinalConfiguration.Builder();
+        OkHttpFinal.getInstance().init(builder.build());
 
-        btnCounter = findViewById(R.id.btn_counter);
-
-        btnLogin = findViewById(R.id.btn_login);
+//        btnRv = findViewById(R.id.btn_rv);
+//
+//        btnCounter = findViewById(R.id.btn_counter);
+//
+//        btnLogin = findViewById(R.id.btn_login);
 
         btnSqlite = findViewById(R.id.btn_sqlite);
 
@@ -58,29 +63,31 @@ public class MainActivity extends AppCompatActivity {
 
         btnDownloadService = findViewById(R.id.btn_download_service);
 
-        btnRv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,  RecyclerViewActivity.class);
-                startActivity(intent);
-            }
-        });
+        btnMVP = findViewById(R.id.btn_mvp);
 
-        btnCounter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//        btnRv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,  RecyclerViewActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnCounter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         btnSqlite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,6 +149,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DownloadDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMVP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MVPActivity.class);
                 startActivity(intent);
             }
         });

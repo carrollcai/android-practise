@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.practise">
     <!-- 外部存储文件的读取权限 -->
-
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -25,7 +24,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".servicebest.DownloadDemoActivity"></activity>
+        <activity android:name=".mvp.ipinfo.MVPActivity"></activity>
+        <activity android:name=".servicebest.DownloadDemoActivity" />
         <activity android:name=".customview.CustomViewActivity" />
         <activity android:name=".webview.WebViewJSActivity" />
         <activity android:name=".webview.WebviewLoadLocalHtmlActivity" />
@@ -60,11 +60,11 @@
             android:exported="true"
             android:readPermission="com.example.practise.READ_DATABASE"
             android:writePermission="com.example.practise.WRITE_DATABASE" />
-        
-        <service android:name=".servicebest.DownloadService"
+
+        <service
+            android:name=".servicebest.DownloadService"
             android:enabled="true"
-            android:exported="true"
-            ></service>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -7,26 +7,26 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_rv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开RecyclerView"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/btn_rv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打开RecyclerView"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/btn_counter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开计数器"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/btn_counter"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打开计数器"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开登录"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/btn_login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打开登录"-->
+<!--        />-->
 
     <Button
         android:id="@+id/btn_sqlite"
@@ -84,6 +84,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="打开下载服务"
+        />
+
+    <Button
+        android:id="@+id/btn_mvp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开MVP"
         />
 
 </LinearLayout>
