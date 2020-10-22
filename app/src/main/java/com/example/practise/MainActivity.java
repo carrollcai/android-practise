@@ -11,6 +11,7 @@ import com.example.practise.customview.CustomViewActivity;
 import com.example.practise.mvp.ipinfo.MVPActivity;
 import com.example.practise.servicebest.DownloadDemoActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
+import com.example.practise.taglayout.TagLayoutActivity;
 import com.example.practise.webview.WebViewJSActivity;
 import com.example.practise.webview.WebviewDemoActivity;
 import com.example.practise.webview.WebviewLoadLocalHtmlActivity;
@@ -28,7 +29,7 @@ import cn.finalteam.okhttpfinal.OkHttpFinalConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService, btnMVP;
+    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService, btnMVP, btnTagLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         btnDownloadService = findViewById(R.id.btn_download_service);
 
         btnMVP = findViewById(R.id.btn_mvp);
+
+        btnTagLayout = findViewById(R.id.btn_tag_layout);
 
 //        btnRv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -157,6 +160,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MVPActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTagLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TagLayoutActivity.class);
                 startActivity(intent);
             }
         });

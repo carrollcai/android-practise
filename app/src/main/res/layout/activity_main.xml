@@ -93,4 +93,11 @@
         android:text="打开MVP"
         />
 
+    <Button
+        android:id="@+id/btn_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开TagLayout"
+        />
+
 </LinearLayout>

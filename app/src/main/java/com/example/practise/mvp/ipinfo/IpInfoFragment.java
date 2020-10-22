@@ -31,11 +31,10 @@ public class IpInfoFragment extends Fragment implements IpInfoContract.View {
         return new IpInfoFragment();
     }
 
-
     @Override
     public void setIpInfo(IpInfo ipInfo) {
         if (ipInfo != null && ipInfo.getData() != null) {
-            IpData ipData = new IpData("河南","郑州","中国");
+            IpData ipData = new IpData("河南", "郑州", "中国");
             tv_country.setText(ipData.getCountry());
             tv_area.setText(ipData.getArea());
             tv_city.setText(ipData.getCity());
