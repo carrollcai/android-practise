@@ -9,9 +9,12 @@ import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
 import com.example.practise.customview.CustomViewActivity;
 import com.example.practise.mvp.ipinfo.MVPActivity;
+import com.example.practise.rectview.RectView;
+import com.example.practise.rectview.RectViewActivity;
 import com.example.practise.servicebest.DownloadDemoActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
 import com.example.practise.taglayout.TagLayoutActivity;
+import com.example.practise.titlebar.TitleBarActivity;
 import com.example.practise.webview.WebViewJSActivity;
 import com.example.practise.webview.WebviewDemoActivity;
 import com.example.practise.webview.WebviewLoadLocalHtmlActivity;
@@ -29,7 +32,11 @@ import cn.finalteam.okhttpfinal.OkHttpFinalConfiguration;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnRv, btnCounter, btnLogin, btnSqlite, btnContentProvider, btnHttpUrl, btnWebview, btnWebviewHtml, btnWebviewJS, btnCustomView, btnDownloadService, btnMVP, btnTagLayout;
+    private Button btnRv, btnCounter, btnLogin, btnSqlite,
+            btnContentProvider, btnHttpUrl, btnWebview,
+            btnWebviewHtml, btnWebviewJS, btnCustomView,
+            btnDownloadService, btnMVP, btnTagLayout, btnRectView,
+            btnTitleBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +73,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnMVP = findViewById(R.id.btn_mvp);
 
-        btnTagLayout = findViewById(R.id.btn_tag_layout);
+//        btnTagLayout = findViewById(R.id.btn_tag_layout);
+
+        btnRectView = findViewById(R.id.btn_rect_view);
+
+        btnTitleBar = findViewById(R.id.btn_title_bar);
 
 //        btnRv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -164,10 +175,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnTagLayout.setOnClickListener(new View.OnClickListener() {
+//        btnTagLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, TagLayoutActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        btnRectView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TagLayoutActivity.class);
+                Intent intent = new Intent(MainActivity.this, RectViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTitleBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TitleBarActivity.class);
                 startActivity(intent);
             }
         });

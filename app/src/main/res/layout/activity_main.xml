@@ -93,11 +93,25 @@
         android:text="打开MVP"
         />
 
+<!--    <Button-->
+<!--        android:id="@+id/btn_tag_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打开TagLayout"-->
+<!--        />-->
+
     <Button
-        android:id="@+id/btn_tag_layout"
+        android:id="@+id/btn_rect_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="打开TagLayout"
+        android:text="打开自定义RectView"
+        />
+
+    <Button
+        android:id="@+id/btn_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开TitleBar"
         />
 
 </LinearLayout>

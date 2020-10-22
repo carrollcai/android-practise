@@ -24,7 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".taglayout.TagLayoutActivity"></activity>
+        <activity android:name=".titlebar.TitleBarActivity"></activity>
+        <activity android:name=".rectview.RectViewActivity" />
+        <activity android:name=".taglayout.TagLayoutActivity" />
         <activity android:name=".mvp.ipinfo.MVPActivity" />
         <activity android:name=".servicebest.DownloadDemoActivity" />
         <activity android:name=".customview.CustomViewActivity" />

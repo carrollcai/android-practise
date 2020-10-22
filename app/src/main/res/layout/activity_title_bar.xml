@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.practise.titlebar.TitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    tools:context=".titlebar.TitleBarActivity"
+    app:title="我是标题"
+    app:title_color="@android:color/white"
+    app:bg="@android:color/holo_orange_light"
+    android:layout_height="wrap_content"
+    android:id="@+id/titleBar"
+    >
+    </com.example.practise.titlebar.TitleBar>

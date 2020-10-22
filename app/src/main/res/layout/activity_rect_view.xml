@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.practise.rectview.RectView
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+    app:rect_color="@android:color/holo_blue_light"
+    >
+</com.example.practise.rectview.RectView>
