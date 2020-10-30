@@ -8,6 +8,8 @@ import android.widget.Button;
 import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
 import com.example.practise.customview.CustomViewActivity;
+import com.example.practise.horizontalview.HorizontalView;
+import com.example.practise.horizontalview.HorizontalViewActivity;
 import com.example.practise.mvp.ipinfo.MVPActivity;
 import com.example.practise.rectview.RectView;
 import com.example.practise.rectview.RectViewActivity;
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             btnContentProvider, btnHttpUrl, btnWebview,
             btnWebviewHtml, btnWebviewJS, btnCustomView,
             btnDownloadService, btnMVP, btnTagLayout, btnRectView,
-            btnTitleBar;
+            btnTitleBar, btnHorizontal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnContentProvider = findViewById(R.id.btn_contentprovider);
 
-        btnHttpUrl = findViewById(R.id.btn_httpurl);
-
-        btnWebview = findViewById(R.id.btn_webview);
-
-        btnWebviewHtml = findViewById(R.id.btn_webview_html);
+//        btnHttpUrl = findViewById(R.id.btn_httpurl);
+//
+//        btnWebview = findViewById(R.id.btn_webview);
+//
+//        btnWebviewHtml = findViewById(R.id.btn_webview_html);
 
         btnWebviewJS = findViewById(R.id.btn_webview_js);
 
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         btnRectView = findViewById(R.id.btn_rect_view);
 
         btnTitleBar = findViewById(R.id.btn_title_bar);
+
+        btnHorizontal = findViewById(R.id.btn_horizontal);
 
 //        btnRv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -119,29 +123,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnHttpUrl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HttpURLConnectionActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnWebview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, WebviewDemoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnWebviewHtml.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, WebviewLoadLocalHtmlActivity.class);
-                startActivity(intent);
-            }
-        });
+//        btnHttpUrl.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, HttpURLConnectionActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnWebview.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, WebviewDemoActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnWebviewHtml.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, WebviewLoadLocalHtmlActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         btnWebviewJS.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -195,6 +199,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TitleBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnHorizontal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HorizontalViewActivity.class);
                 startActivity(intent);
             }
         });
