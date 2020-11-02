@@ -1,130 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-<!--    <Button-->
-<!--        android:id="@+id/btn_rv"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开RecyclerView"-->
-<!--        />-->
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_counter"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开计数器"-->
-<!--        />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_login"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开登录"-->
-<!--        />-->
-
-    <Button
-        android:id="@+id/btn_sqlite"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开sqlite"
+        android:layout_height="match_parent"
         />
-
-    <Button
-        android:id="@+id/btn_contentprovider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开ContentProvider"
-        />
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_httpurl"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开HttpURLConnection"-->
-<!--        />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_webview"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开Webview"-->
-<!--        />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_webview_html"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开Webview本地HTML"-->
-<!--        />-->
-
-    <Button
-        android:id="@+id/btn_webview_js"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开Webview JS"
-        />
-
-    <Button
-        android:id="@+id/btn_custom_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开自定义View"
-        />
-
-
-
-    <Button
-        android:id="@+id/btn_download_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开下载服务"
-        />
-
-    <Button
-        android:id="@+id/btn_mvp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开MVP"
-        />
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_tag_layout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开TagLayout"-->
-<!--        />-->
-
-    <Button
-        android:id="@+id/btn_rect_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开自定义RectView"
-        />
-
-    <Button
-        android:id="@+id/btn_title_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开TitleBar"
-        />
-
-    <Button
-        android:id="@+id/btn_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开Horizontal Demo"
-        />
-
-    <Button
-        android:id="@+id/btn_event_bus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开EventBus"
-        />
-
 </LinearLayout>
