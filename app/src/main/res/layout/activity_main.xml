@@ -120,4 +120,11 @@
         android:text="打开Horizontal Demo"
         />
 
+    <Button
+        android:id="@+id/btn_event_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开EventBus"
+        />
+
 </LinearLayout>

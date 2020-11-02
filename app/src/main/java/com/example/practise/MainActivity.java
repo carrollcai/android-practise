@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
 import com.example.practise.customview.CustomViewActivity;
+import com.example.practise.eventbus.EventBusActivity;
 import com.example.practise.horizontalview.HorizontalView;
 import com.example.practise.horizontalview.HorizontalViewActivity;
 import com.example.practise.mvp.ipinfo.MVPActivity;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             btnContentProvider, btnHttpUrl, btnWebview,
             btnWebviewHtml, btnWebviewJS, btnCustomView,
             btnDownloadService, btnMVP, btnTagLayout, btnRectView,
-            btnTitleBar, btnHorizontal;
+            btnTitleBar, btnHorizontal, btnEventBus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         btnTitleBar = findViewById(R.id.btn_title_bar);
 
         btnHorizontal = findViewById(R.id.btn_horizontal);
+
+        btnEventBus = findViewById(R.id.btn_event_bus);
 
 //        btnRv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -207,6 +210,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HorizontalViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnEventBus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EventBusActivity.class);
                 startActivity(intent);
             }
         });
