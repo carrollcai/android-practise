@@ -24,7 +24,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".eventbus.SecondActivity"></activity>
+        <activity android:name=".hybrid.HybridActivity"></activity>
+        <activity android:name=".eventbus.SecondActivity" />
         <activity android:name=".eventbus.EventBusActivity" />
         <activity android:name=".horizontalview.HorizontalViewActivity" />
         <activity android:name=".titlebar.TitleBarActivity" />

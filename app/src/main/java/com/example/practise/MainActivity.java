@@ -9,6 +9,7 @@ import com.example.practise.counter.CounterActivity;
 import com.example.practise.customview.CustomViewActivity;
 import com.example.practise.eventbus.EventBusActivity;
 import com.example.practise.horizontalview.HorizontalViewActivity;
+import com.example.practise.hybrid.HybridActivity;
 import com.example.practise.mvp.ipinfo.MVPActivity;
 import com.example.practise.rectview.RectViewActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new BtnList("打开TitleBar", TitleBarActivity.class));
         list.add(new BtnList("打开Horizontal Demo", HorizontalViewActivity.class));
         list.add(new BtnList("打开EventBus", EventBusActivity.class));
+        list.add(new BtnList("打开Hybrid", HybridActivity.class));
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView = findViewById(R.id.recyclerView);
