@@ -39,4 +39,8 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation "miuix.folme:folme:1.0.1-alpha14"
+    implementation 'miuix.basewidget:miuixbasewidget:1.0.0-beta02'
+    implementation "miuix.appcompat:appcompat:1.1.0-beta04"
+    implementation 'miuix.core:core:1.1.0-beta01'
 }

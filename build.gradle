@@ -1,6 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        maven { url 'http://artifactory.d.xiaomi.net/artifactory/artifactory-snapshots/' }
+        maven { url 'http://sdk.pt.miui.com/miuisdk/maven2' }
+        maven { url 'http://artifactory.d.xiaomi.net/artifactory/artifactory-releases' }
         google()
         jcenter()
     }
@@ -14,6 +17,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://artifactory.d.xiaomi.net/artifactory/artifactory-snapshots/' }
+        maven { url 'http://sdk.pt.miui.com/miuisdk/maven2' }
+        maven { url 'http://sdk.pt.miui.com/miuisdk/miuix/' }
+        maven { url 'http://artifactory.d.xiaomi.net/artifactory/artifactory-releases' }
         google()
         jcenter()
     }

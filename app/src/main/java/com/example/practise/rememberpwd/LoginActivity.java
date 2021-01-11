@@ -1,9 +1,14 @@
 package com.example.practise.rememberpwd;
 
+import android.app.Activity;
+import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -65,7 +70,6 @@ public class LoginActivity extends AppCompatActivity {
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String account = mAccount.getText().toString();
                 String pwd = mPassword.getText().toString();
 
@@ -116,6 +120,31 @@ public class LoginActivity extends AppCompatActivity {
 //                    startActivity(intent);
 
                 }
+            }
+        });
+
+
+        findViewById(R.id.login_test1).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.d("onTouch", "onTouch setMotionEventSplittingEnabled1，" + event);
+                return true;
+            }
+        });
+
+        findViewById(R.id.login_test2).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.d("onTouch", "onTouch setMotionEventSplittingEnabled2，" + event);
+                return true;
+            }
+        });
+
+        mAccount.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.d("onTouch", "onTouch setMotionEventSplittingEnabled3，" + event);
+                return true;
             }
         });
     }

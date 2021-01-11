@@ -16,6 +16,7 @@ import com.example.practise.recyclerview.RecyclerViewActivity;
 import com.example.practise.rememberpwd.LoginActivity;
 import com.example.practise.servicebest.DownloadDemoActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
+import com.example.practise.startdraganddrop.StartDargAndDropActivity;
 import com.example.practise.taglayout.TagLayoutActivity;
 import com.example.practise.titlebar.TitleBarActivity;
 import com.example.practise.webview.WebViewJSActivity;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new BtnList("打开Horizontal Demo", HorizontalViewActivity.class));
         list.add(new BtnList("打开EventBus", EventBusActivity.class));
         list.add(new BtnList("打开Hybrid", HybridActivity.class));
+        list.add(new BtnList("打开StartDragAndDrop", StartDargAndDropActivity.class));
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView = findViewById(R.id.recyclerView);

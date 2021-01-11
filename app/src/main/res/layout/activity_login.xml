@@ -66,14 +66,44 @@
 
     </LinearLayout>
 
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login_btn"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
+        android:id="@+id/login_btn"
         android:text="登录"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:splitMotionEvents="false"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_test1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="splitMotionEvents1"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_test2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="splitMotionEvents12"
+            />
+
+    </LinearLayout>
 
 
 </LinearLayout>
