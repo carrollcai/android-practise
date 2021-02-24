@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edittext.EditTextDemoActivity">
+
+    <com.example.practise.edittext.EditTextTest
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:background="@null"
+        android:id="@+id/tv"
+        android:textSize="30sp"
+        android:autoSizeMinTextSize="20sp"
+        android:maxLines="1"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeTextType="uniform"
+        />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/add_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加数字"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/add_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加符号"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/cancel_focus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消聚焦"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/clear_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除某一个字符"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        />
+
+
+
+</LinearLayout>

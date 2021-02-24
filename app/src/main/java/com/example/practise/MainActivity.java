@@ -7,6 +7,7 @@ import com.example.practise.HttpURLConnectionDemo.HttpURLConnectionActivity;
 import com.example.practise.contentproviderdemo.ContentProviderDemo;
 import com.example.practise.counter.CounterActivity;
 import com.example.practise.customview.CustomViewActivity;
+import com.example.practise.edittext.EditTextDemoActivity;
 import com.example.practise.eventbus.EventBusActivity;
 import com.example.practise.horizontalview.HorizontalViewActivity;
 import com.example.practise.hybrid.HybridActivity;
@@ -15,9 +16,11 @@ import com.example.practise.rectview.RectViewActivity;
 import com.example.practise.recyclerview.RecyclerViewActivity;
 import com.example.practise.rememberpwd.LoginActivity;
 import com.example.practise.servicebest.DownloadDemoActivity;
+import com.example.practise.spanable.SpannableActivity;
 import com.example.practise.sqlitedemo.SqliteDemoActivity;
 import com.example.practise.startdraganddrop.StartDargAndDropActivity;
 import com.example.practise.taglayout.TagLayoutActivity;
+import com.example.practise.textviewanimation.TextviewAnimation;
 import com.example.practise.titlebar.TitleBarActivity;
 import com.example.practise.webview.WebViewJSActivity;
 import com.example.practise.webview.WebviewDemoActivity;
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         OkHttpFinal.getInstance().init(builder.build());
 
         ArrayList<BtnList> list = new ArrayList();
+        list.add(new BtnList("打开输入动效", TextviewAnimation.class));
+        list.add(new BtnList("打开EditTextDemoActivity", EditTextDemoActivity.class));
         list.add(new BtnList("打开RecyclerView", RecyclerViewActivity.class));
         list.add(new BtnList("打开计数器", CounterActivity.class));
         list.add(new BtnList("打开登录", LoginActivity.class));
@@ -70,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new BtnList("打开EventBus", EventBusActivity.class));
         list.add(new BtnList("打开Hybrid", HybridActivity.class));
         list.add(new BtnList("打开StartDragAndDrop", StartDargAndDropActivity.class));
+        list.add(new BtnList("打开SpanableDemo", SpannableActivity.class));
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView = findViewById(R.id.recyclerView);

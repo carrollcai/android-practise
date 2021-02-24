@@ -24,7 +24,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".startdraganddrop.StartDargAndDropActivity" android:theme="@style/Theme.DayNight" />
+        <activity android:name=".textviewanimation.TextviewAnimation"></activity>
+        <activity android:name=".edittext.EditTextDemoActivity" />
+        <activity android:name=".spanable.SpannableActivity" />
+        <activity
+            android:name=".startdraganddrop.StartDargAndDropActivity"
+            android:theme="@style/Theme.DayNight" />
         <activity android:name=".hybrid.HybridActivity" />
         <activity android:name=".eventbus.SecondActivity" />
         <activity android:name=".eventbus.EventBusActivity" />
